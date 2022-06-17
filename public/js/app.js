@@ -18,8 +18,14 @@ weatherForm.addEventListener("submit", (e) => {
       if (data.error) {
         msg1.textContent = data.error;
       } else {
-        msg1.textContent = data.location;
-        msg2.textContent = data.forecast;
+        msg1.textContent = "Location: " + data.location;
+        msg2.textContent =
+          data.forecast +
+          ". Temperature: " +
+          data.temperature +
+          ". It feels like " +
+          data.feelsLike +
+          ". Changes of precipitations: " + data.precip*100+"%.";
       }
     });
   });
