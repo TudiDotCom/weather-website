@@ -25,7 +25,9 @@ weatherForm.addEventListener("submit", (e) => {
           data.temperature +
           ". It feels like " +
           data.feelsLike +
-          ". Changes of precipitations: " + data.precip*100+"%.";
+          ". Changes of precipitations: " +
+          data.precip +
+          "%.";
       }
     });
   });
